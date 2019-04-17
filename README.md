@@ -70,6 +70,10 @@
 &emsp;&emsp;一辆车在系统计算中达到目的地的时间点减去其最初计划出发的时间点，称为这辆车的行驶用时。
 
 
+### 复赛需求变更：
+&emsp;&emsp;允许参赛选手对不超过10%的预置车辆的路径进行重新规划。所有预置车辆出发时间均不得修改。
+
+
 ## 解题思路：
 ### 初赛：  
 &emsp;&emsp;初赛时，我们没有写判题器，主要思路是先给出每辆车的出发时间，再根据出发时间的预计路况，动态改变路径权重寻找路径。
@@ -95,3 +99,16 @@
     
     
 ## 程序运行方法：
+### 初赛：  
+&emsp;&emsp;以使用训练用例“1-map-exam-1”为例：在“./初赛/SDK/SDK_python/CodeCraft-2019/src”目录下执行：
+`python3 CodeCraft-2019.py ../1-map-exam-1/car.txt ../1-map-exam-1/road.txt ../1-map-exam-1/cross.txt ../1-map-exam-1/answer.txt`。
+
+
+### 复赛： 
+&emsp;&emsp;以使用训练用例“2-map-exam-1”为例：在“./复赛/SDK/SDK_python/CodeCraft-2019/src”目录下执行：
+`python3 CodeCraft-2019.py ../2-map-exam-1/car.txt ../2-map-exam-1/road.txt ../2-map-exam-1/cross.txt ../2-map-exam-1/presetAnswer.txt ../1-map-exam-1/answer.txt`。
+
+&emsp;&emsp;在复赛代码中，取消对以下代码的注释可以显示实时的发车和路况信息：
+```
+print(t, len(list_car_to_start), num_car_in_preset_answer, num_car_on_road, len(list_unstarted_car), get_finish_car(dict_car_state))
+```
