@@ -106,7 +106,7 @@
 
 ### 复赛： 
 &emsp;&emsp;以使用训练用例“2-map-exam-1”为例：在“./复赛/SDK/SDK_python/CodeCraft-2019/src”目录下执行：
-`python3 CodeCraft-2019.py ../2-map-exam-1/car.txt ../2-map-exam-1/road.txt ../2-map-exam-1/cross.txt ../2-map-exam-1/presetAnswer.txt ../1-map-exam-1/answer.txt`。
+`python3 CodeCraft-2019.py ../2-map-exam-1/car.txt ../2-map-exam-1/road.txt ../2-map-exam-1/cross.txt ../2-map-exam-1/presetAnswer.txt ../2-map-exam-1/answer.txt`。
 
 &emsp;&emsp;在复赛代码中，取消对以下代码的注释可以显示实时的发车和路况信息：
 ```
